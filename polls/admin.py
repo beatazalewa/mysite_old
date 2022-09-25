@@ -18,6 +18,7 @@ class QuestionAdmin(admin.ModelAdmin):
     list_filter = ['pub_date']
     search_fields = ['question_text']
     ordering = ['id']
+    list_per_page = 20
 
 
 admin.site.register(Question, QuestionAdmin)
